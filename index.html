@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,21 +18,68 @@
     <![endif]-->
   </head>
   <body>
-      
+      <!-- Title -->
       <header class="container">
-          <row class="col-sm-12">
             <h1>Math 104: Introduction to Analysis</h1>
-            <p>Fall 2016 <br>
-                Instructor: Marina Iliopoulou <br>
-                MWF 3-4 pm in 241 Cory Hall</p>
-          </row>
-          <hr>
       </header>
       
+      <!-- Syllabus -->
+      <section class="container">
+          <hr>
+          <div class=row id=>
+              <b class="col-sm-2">Description: </b>
+              <p class="col-sm-10">Real numbers, sequences, series, limits, continuity, differentiability, mean value theorem, uniform convergence, interchange of limit operations, basics of metric spaces, Riemann integration.</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Prerequisites: </b>
+              <p class="col-sm-10">Math 53 (Multivariable Calculus), Math 54(Linear Algebra and Differential Equations)</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Instructor: </b>
+              <p class="col-sm-10"><a href="http://web.mat.bham.ac.uk/~iliopoum/Website/index.html">Marina Iliopoulou</a></p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Time/Location: </b>
+              <p class="col-sm-10">MWF 3:00 pm - 4:00 pm, 241 Cory</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Office Hours: </b>
+              <p class="col-sm-10">Tu 4:00 pm - 6:00 pm, Th 11:00 am - 1:00 pm, 849 Evans</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Exams: </b>
+              <ul class="col-sm-10">
+                <li><p>Midterm: 10 October, 3:00 - 4:00 pm, 241 Cory</p></li>
+                <li><p>Final: 13 December, 7:00 - 10:00 pm, location TBA</p></li>
+                <li><p id=note>All exams are closed book.</p></li>
+              </ul>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Textbook: </b>
+              <p class="col-sm-10"><i>Principals of Mathematical Analysis</i> (3rd Edition), Walter Rudin</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Supplemental Texts: </b>
+              <p class="col-sm-10"><i>Calculus</i> (4th Edition), Michael Spivak</p>
+          </div>
+          <div class=row>
+              <b class="col-sm-2">Grading: </b>
+              <ul class="col-sm-10">
+                  <li><p>20% Assignments, 30% Midterm, 50% Final</p></li>
+                  <li><p id=note>The lowest score from the weekly assignments will be dropped.</p></li>
+              </ul>
+          </div>
+          <div class=row>
+              <i class=col-sm-12 id=note>For more information, refer to the full <a href=assets/syllabus.pdf target="_blank">syllabus</a>.</i>
+          </div>
+      </section>
       <!-- Add gaps at the end of the line --> 
       
       <!-- Search feature --> 
       <section class="container">
+          <hr>
+          
+          <h3>Search</h3>
           <!-- Add search feature here -->
       </section>
       
@@ -106,7 +154,7 @@
                 <tr>
                   <td>Fri, 9/16</td>
                   <td>(Topics) <br>(<a href="assets/lecture_notes/104_Lecture10.pdf" target="_blank">Lecture 10 Notes</a>)</td>
-                  <td><a href="assets/assignments/assignment4.pdf" target="_blank">Assignment 4</a> (<a href="assets/assignments/assignment4.tex" download>Tex</a> download) <br> (Due Mon, 9/26)</td>
+                  <td><a href="assets/assignments/assignment4.pdf" target="_blank">Assignment 4</a> (<a href="assets/assignments/assignment4.tex" download>Tex</a>) <br> (Due Mon, 9/26)</td>
                 </tr>
                 <tr>
                   <th scope="row" rowspan="3">5</th>
@@ -312,7 +360,15 @@
 
               </tbody>
           </table>
+          
       </section>
+      
+      <footer class="container">
+          <row class="col-sm-12">
+              <p>Developed by Chin Chang, <a href="philglazer.me" target="">Phil Glazer</a>, and <a href="andypalan.com">Andy Palan</a></p>
+          </row>
+      </footer>
+
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
