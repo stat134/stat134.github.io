@@ -1,0 +1,280 @@
+\documentclass[11pt]{amsart}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{verbatim}
+%\parindent = 5 pt
+%\parskip = 12 pt
+%\oddsidemargin 0.1in \evensidemargin 0.1in \textwidth=7in
+%\textheight=8.5in \itemsep=0in
+%\parsep=0.1in
+
+\textwidth 16cm \textheight 24cm \oddsidemargin 0.1cm
+\evensidemargin 0.1cm \topmargin -0.8cm
+%\def\yy{{\hbox{\bf y}}}
+%\newcommand\eps{\varepsilon}
+%\newcommand\tr{\operatorname{tr}}
+\newcommand\diag{\operatorname{diag}}\newcommand\hess{\operatorname{Hess}}
+\newcommand\divergence{\operatorname{div}}
+\newcommand\ad{\operatorname{ad}}
+%\newcommand\dist{\operatorname{dist}}
+%\renewcommand\span{\operatorname{span}}
+\newcommand\rank{\operatorname{rank}}
+%\renewcommand\Re{\operatorname{Re}}
+%\renewcommand\Im{\operatorname{Im}}
+\newcommand\g{{\mathbb{g}}}
+\newcommand\R{{\mathbb{R}}}
+\newcommand\C{{\mathbb{C}}}
+\newcommand\Z{{\mathbf{Z}}}
+\newcommand\D{{\mathbf{D}}}
+\newcommand\Q{{\mathbf{Q}}}
+\newcommand\G{{\mathbf{G}}}
+\newcommand\I{{\mathbf{I}}}
+\renewcommand\P{{\mathbf{P}}}
+\newcommand\E{{\mathbf{E}}}
+\newcommand\U{{\mathbf{U}}}
+\newcommand\A{{\mathbf{A}}}
+\newcommand\Var{\mathbf{Var}}
+\renewcommand\Im{{\operatorname{Im}}}
+\renewcommand\Re{{\operatorname{Re}}}
+\newcommand\eps{{\varepsilon}}
+\newcommand\trace{\operatorname{trace}}
+\newcommand\supp{\operatorname{supp}}
+\newcommand\tr{\operatorname{tr}}
+\newcommand\dist{\operatorname{dist}}
+\newcommand\Span{\operatorname{Span}}
+\newcommand\sgn{\operatorname{sgn}}
+\newcommand\dive{\operatorname{div}}
+\renewcommand\a{x}
+\renewcommand\b{y}
+
+% \newcommand\bm{{\mathbf{m}}}
+\newcommand\dd{\partial}
+\newcommand\smd{\hbox{smd}}
+\newcommand\Ba{{\mathbf a}}
+\newcommand\Bb{{\mathbf b}}
+\newcommand\Bc{{\mathbf c}}
+\newcommand\Bd{{\mathbf d}}
+\newcommand\Be{{\mathbf e}}
+\newcommand\Bf{{\mathbf f}}
+\newcommand\Bg{{\mathbf g}}
+\newcommand\Bh{{\mathbf h}}
+\newcommand\Bi{{\mathbf i}}
+\newcommand\Bj{{\mathbf j}}
+\newcommand\Bk{{\mathbf k}}
+\newcommand\Bl{{\mathbf l}}
+\newcommand\Bm{{\mathbf m}}
+\newcommand\Bn{{\mathbf n}}
+\newcommand\Bo{{\mathbf o}}
+\newcommand\Bp{{\mathbf p}}
+\newcommand\Bq{{\mathbf q}}
+\newcommand\Bs{{\mathbf s}}
+\newcommand\Bt{{\mathbf t}}
+\newcommand\Bu{{\mathbf u}}
+\newcommand\Bv{{\mathbf v}}
+\newcommand\Bw{{\mathbf w}}
+\newcommand\Bx{{\mathbf x}}
+\newcommand\By{{\mathbf y}}
+\newcommand\Bz{{\mathbf z}}
+\newcommand\p{{\mathbf p}}
+\newcommand\bi{{\mathbf i}}
+%
+
+\newcommand\BA{{\mathbf A}}
+\newcommand\BB{{\mathbf B}}
+\newcommand\BC{{\mathbf C}}
+\newcommand\BD{{\mathbf D}}
+\newcommand\BE{{\mathbf E}}
+\newcommand\BF{{\mathbf F}}
+\newcommand\BG{{\mathbf G}}
+\newcommand\BH{{\mathbf H}}
+\newcommand\BI{{\mathbf I}}
+\newcommand\BJ{{\mathbf J}}
+\newcommand\BK{{\mathbf K}}
+\newcommand\BL{{\mathbf L}}
+\newcommand\BM{{\mathbf M}}
+\newcommand\BN{{\mathbf N}}
+\newcommand\BO{{\mathbf O}}
+\newcommand\BP{{\mathbf P}}
+\newcommand\BQ{{\mathbf Q}}
+\newcommand\BS{{\mathbf S}}
+\newcommand\BT{{\mathbf T}}
+\newcommand\BU{{\mathbf U}}
+\newcommand\BV{{\mathbf V}}
+\newcommand\BW{{\mathbf W}}
+\newcommand\BX{{\mathbf X}}
+\newcommand\BY{{\mathbf Y}}
+\newcommand\BZ{{\mathbf Z}}
+\renewcommand\Pr{{\mathbf P }}
+
+%cal letter
+
+\newcommand\CA{{\mathcal A}}
+\newcommand\CB{{\mathcal B}}
+\newcommand\CC{{\mathcal C}}
+\newcommand\CD{{\mathcal D}}
+\newcommand\CE{{\mathcal E}}
+\newcommand\CF{{\mathcal F}}
+\newcommand\CG{{\mathcal G}}
+\newcommand\CH{{\mathcal H}}
+\newcommand\CI{{\mathcal I}}
+\newcommand\CJ{{\mathcal J}}
+\newcommand\CK{{\mathcal K}}
+\newcommand\CL{{\mathcal L}}
+\newcommand\CM{{\mathcal M}}
+\newcommand\CN{{\mathcal N}}
+\newcommand\CO{{\mathcal O}}
+\newcommand\CP{{\mathcal P}}
+\newcommand\CQ{{\mathcal Q}}
+\newcommand\CS{{\mathcal S}}
+\newcommand\CT{{\mathcal T}}
+\newcommand\CU{{\mathcal U}}
+\newcommand\CV{{\mathcal V}}
+\newcommand\CW{{\mathcal W}}
+\newcommand\CX{{\mathcal X}}
+\newcommand\CY{{\mathcal Y}}
+\newcommand\CZ{{\mathcal Z}}
+
+%number theory
+
+\newcommand\condo{{\bf C0}}
+\newcommand\condone{{\bf C1}}
+
+\newcommand\N{{\mathbb N}}
+\newcommand\BBQ {{\mathbb Q}}
+\newcommand\BBI {{\mathbb I}}
+\newcommand\BBR {{\mathbb R}}
+\newcommand\BBZ {{\mathbb Z}}
+\newcommand\BBC{{\mathbb C}}
+% tilde
+
+\newcommand\ta{{\tilde a}}
+\newcommand\tb{{\tilde b}}
+\newcommand\tc{{\tilde c}}
+\newcommand\td{{\tilde d}}
+\newcommand\te{{\tilde e}}
+\newcommand\tf{{\tilde f}}
+\newcommand\tg{{\tilde g}}
+% \newcommand\th{{\tilde h}}
+\newcommand\ti{{\tilde i}}
+\newcommand\tj{{\tilde j}}
+\newcommand\tk{{\tilde k}}
+\newcommand\tl{{\tilde l}}
+\newcommand\tm{{\tilde m}}
+\newcommand\tn{{\tilde n}}
+%\newcommand\to{{\tilde o}}
+\newcommand\tp{{\tilde p}}
+\newcommand\tq{{\tilde q}}
+\newcommand\ts{{\tilde s}}
+%\newcommand\tt{{\tilde t}}
+\newcommand\tu{{\tilde u}}
+\newcommand\tv{{\tilde v}}
+\newcommand\tw{{\tilde w}}
+\newcommand\tx{{\tilde x}}
+\newcommand\ty{{\tilde y}}
+\newcommand\tz{{\tilde z}}
+\newcommand\ep{{\epsilon}}
+%\newcommand\trace{{\operatorname{trace}}}
+\newcommand\sign{{\operatorname{sign}}}
+%\newcommand\hess{{\operatorname{Hess}}}
+\newcommand\Dyson{{\operatorname{Dyson}}}
+\renewcommand\th{{\operatorname{th}}}
+
+
+
+
+
+
+\def\x{{\bf X}}
+\def\y{{\bf Y}}
+%\def\I#1{{\bf 1}_{#1}}
+\def\mb{\mbox}
+
+% \swapnumbers
+% \pagestyle{headings}
+\parindent = 5 pt
+\parskip = 12 pt
+
+\theoremstyle{plain}
+  \newtheorem{theorem}{Theorem}[section]
+  \newtheorem{conjecture}[theorem]{Conjecture}
+  \newtheorem{problem}[theorem]{Problem}
+  \newtheorem{assumption}[theorem]{Assumption}
+  \newtheorem{heuristic}[theorem]{Heuristic}
+  \newtheorem{proposition}[theorem]{Proposition}
+  \newtheorem{fact}[theorem]{Fact}
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{corollary}[theorem]{Corollary}
+  \newtheorem{claim}[theorem]{Claim}
+ % \newtheorem{problem} [theorem]{Question}
+
+\theoremstyle{definition}
+  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{example}[theorem]{Example}
+  \newtheorem{remark}[theorem]{Remark}
+  \numberwithin{equation}{section}
+
+\begin{document}
+\title{Math 104 - Weekly assignment 4}
+\author{Due 26 September 2016, by 16:00}
+\maketitle
+
+\begin{enumerate}
+
+\item Find a sequence $(a_n)_{n\in\N}$ in $\R$, with $a_{n+1}-a_n\rightarrow 0$, but $(a_n)_{n\in\N}$ not Cauchy.
+\vspace{0.4in}
+
+\item Let $(a_n)_{n\in\N}$ be a sequence in $\R$. Show that $(a_n)_{n\in\N}$ converges if and only if: $(a_{2n})_{n\in\N}$ and $(a_{2n-1})_{n\in\N}$ converge and have the same limit.
+\vspace{0.4in}
+
+\item 
+\begin{enumerate}[(i)]
+\item Show that $\sum_{k=1}^{+\infty}\frac{1}{k}$ diverges using the Cauchy condensation test.
+\vspace{0.1in}
+\item Show that, if $a_k\geq 0$ for all $k\in \N$, then the series $\sum_{k=1}^{+\infty}\frac{a_k}{1+k^2a_k}$ converges.
+\vspace{0.1in}
+\item Test for convergence the series $\frac{1}{2}+\frac{1}{3}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{2^3}+\frac{1}{3^3}+\frac{1}{2^4}+\frac{1}{3^4}+\ldots$.
+\end{enumerate}
+\vspace{0.4in}
+
+\item Test for convergence the following series:
+\begin{enumerate}[(i)]
+\item $\sum_{k=1}^{+\infty}\frac{k^2-k}{k^2}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{k!}{k^k}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{(-1)^k\sin(k^{100})}{k^{\frac{3}{2}}}$
+\vspace{0.1in}
+\item $\sum_{k=5}^{+\infty}\frac{k+1}{k^4-5k^3+8}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{3^{k+1}+k}{4^k-k}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{k+\sqrt{k}}{2k^3-1}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{\cos^kk}{k^{\frac{3}{2}}}$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{1}{k^p-k^q}$, $0<q<p$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}k(1+k^2)^p$, $p\in\R$
+\vspace{0.1in}
+\item $\sum_{k=1}^{+\infty}\frac{k^2x^k}{2^k}$, $x\in\R$
+
+\end{enumerate}
+\vspace{0.4in}
+
+\item
+\begin{enumerate}[(i)]
+\item Show that $\sum_{k=1}^{+\infty}(\sqrt[k]{k}-1)$ diverges. (Maybe you can take some inspiration from the proof of $\sqrt[k]{k}\rightarrow 1$).
+\vspace{0.1in}
+\item Show that $\sum_{k=1}^{+\infty}\frac{1}{k(k+1)(k+2)}$ converges. Find its limit.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

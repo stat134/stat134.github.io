@@ -1,0 +1,301 @@
+\documentclass[11pt]{amsart}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{verbatim}
+%\parindent = 5 pt
+%\parskip = 12 pt
+%\oddsidemargin 0.1in \evensidemargin 0.1in \textwidth=7in
+%\textheight=8.5in \itemsep=0in
+%\parsep=0.1in
+
+\textwidth 16cm \textheight 24cm \oddsidemargin 0.1cm
+\evensidemargin 0.1cm \topmargin -0.8cm
+%\def\yy{{\hbox{\bf y}}}
+%\newcommand\eps{\varepsilon}
+%\newcommand\tr{\operatorname{tr}}
+\newcommand\diag{\operatorname{diag}}\newcommand\hess{\operatorname{Hess}}
+\newcommand\divergence{\operatorname{div}}
+\newcommand\ad{\operatorname{ad}}
+%\newcommand\dist{\operatorname{dist}}
+%\renewcommand\span{\operatorname{span}}
+\newcommand\rank{\operatorname{rank}}
+%\renewcommand\Re{\operatorname{Re}}
+%\renewcommand\Im{\operatorname{Im}}
+\newcommand\g{{\mathbb{g}}}
+\newcommand\R{{\mathbb{R}}}
+\newcommand\C{{\mathbb{C}}}
+\newcommand\Z{{\mathbf{Z}}}
+\newcommand\D{{\mathbf{D}}}
+\newcommand\Q{{\mathbf{Q}}}
+\newcommand\G{{\mathbf{G}}}
+\newcommand\I{{\mathbf{I}}}
+\renewcommand\P{{\mathbf{P}}}
+\newcommand\E{{\mathbf{E}}}
+\newcommand\U{{\mathbf{U}}}
+\newcommand\A{{\mathbf{A}}}
+\newcommand\Var{\mathbf{Var}}
+\renewcommand\Im{{\operatorname{Im}}}
+\renewcommand\Re{{\operatorname{Re}}}
+\newcommand\eps{{\varepsilon}}
+\newcommand\trace{\operatorname{trace}}
+\newcommand\supp{\operatorname{supp}}
+\newcommand\tr{\operatorname{tr}}
+\newcommand\dist{\operatorname{dist}}
+\newcommand\Span{\operatorname{Span}}
+\newcommand\sgn{\operatorname{sgn}}
+\newcommand\dive{\operatorname{div}}
+\renewcommand\a{x}
+\renewcommand\b{y}
+
+% \newcommand\bm{{\mathbf{m}}}
+\newcommand\dd{\partial}
+\newcommand\smd{\hbox{smd}}
+\newcommand\Ba{{\mathbf a}}
+\newcommand\Bb{{\mathbf b}}
+\newcommand\Bc{{\mathbf c}}
+\newcommand\Bd{{\mathbf d}}
+\newcommand\Be{{\mathbf e}}
+\newcommand\Bf{{\mathbf f}}
+\newcommand\Bg{{\mathbf g}}
+\newcommand\Bh{{\mathbf h}}
+\newcommand\Bi{{\mathbf i}}
+\newcommand\Bj{{\mathbf j}}
+\newcommand\Bk{{\mathbf k}}
+\newcommand\Bl{{\mathbf l}}
+\newcommand\Bm{{\mathbf m}}
+\newcommand\Bn{{\mathbf n}}
+\newcommand\Bo{{\mathbf o}}
+\newcommand\Bp{{\mathbf p}}
+\newcommand\Bq{{\mathbf q}}
+\newcommand\Bs{{\mathbf s}}
+\newcommand\Bt{{\mathbf t}}
+\newcommand\Bu{{\mathbf u}}
+\newcommand\Bv{{\mathbf v}}
+\newcommand\Bw{{\mathbf w}}
+\newcommand\Bx{{\mathbf x}}
+\newcommand\By{{\mathbf y}}
+\newcommand\Bz{{\mathbf z}}
+\newcommand\p{{\mathbf p}}
+\newcommand\bi{{\mathbf i}}
+%
+
+\newcommand\BA{{\mathbf A}}
+\newcommand\BB{{\mathbf B}}
+\newcommand\BC{{\mathbf C}}
+\newcommand\BD{{\mathbf D}}
+\newcommand\BE{{\mathbf E}}
+\newcommand\BF{{\mathbf F}}
+\newcommand\BG{{\mathbf G}}
+\newcommand\BH{{\mathbf H}}
+\newcommand\BI{{\mathbf I}}
+\newcommand\BJ{{\mathbf J}}
+\newcommand\BK{{\mathbf K}}
+\newcommand\BL{{\mathbf L}}
+\newcommand\BM{{\mathbf M}}
+\newcommand\BN{{\mathbf N}}
+\newcommand\BO{{\mathbf O}}
+\newcommand\BP{{\mathbf P}}
+\newcommand\BQ{{\mathbf Q}}
+\newcommand\BS{{\mathbf S}}
+\newcommand\BT{{\mathbf T}}
+\newcommand\BU{{\mathbf U}}
+\newcommand\BV{{\mathbf V}}
+\newcommand\BW{{\mathbf W}}
+\newcommand\BX{{\mathbf X}}
+\newcommand\BY{{\mathbf Y}}
+\newcommand\BZ{{\mathbf Z}}
+\renewcommand\Pr{{\mathbf P }}
+
+%cal letter
+
+\newcommand\CA{{\mathcal A}}
+\newcommand\CB{{\mathcal B}}
+\newcommand\CC{{\mathcal C}}
+\newcommand\CD{{\mathcal D}}
+\newcommand\CE{{\mathcal E}}
+\newcommand\CF{{\mathcal F}}
+\newcommand\CG{{\mathcal G}}
+\newcommand\CH{{\mathcal H}}
+\newcommand\CI{{\mathcal I}}
+\newcommand\CJ{{\mathcal J}}
+\newcommand\CK{{\mathcal K}}
+\newcommand\CL{{\mathcal L}}
+\newcommand\CM{{\mathcal M}}
+\newcommand\CN{{\mathcal N}}
+\newcommand\CO{{\mathcal O}}
+\newcommand\CP{{\mathcal P}}
+\newcommand\CQ{{\mathcal Q}}
+\newcommand\CS{{\mathcal S}}
+\newcommand\CT{{\mathcal T}}
+\newcommand\CU{{\mathcal U}}
+\newcommand\CV{{\mathcal V}}
+\newcommand\CW{{\mathcal W}}
+\newcommand\CX{{\mathcal X}}
+\newcommand\CY{{\mathcal Y}}
+\newcommand\CZ{{\mathcal Z}}
+
+%number theory
+
+\newcommand\condo{{\bf C0}}
+\newcommand\condone{{\bf C1}}
+
+\newcommand\N{{\mathbb N}}
+\newcommand\BBQ {{\mathbb Q}}
+\newcommand\BBI {{\mathbb I}}
+\newcommand\BBR {{\mathbb R}}
+\newcommand\BBZ {{\mathbb Z}}
+\newcommand\BBC{{\mathbb C}}
+% tilde
+
+\newcommand\ta{{\tilde a}}
+\newcommand\tb{{\tilde b}}
+\newcommand\tc{{\tilde c}}
+\newcommand\td{{\tilde d}}
+\newcommand\te{{\tilde e}}
+\newcommand\tf{{\tilde f}}
+\newcommand\tg{{\tilde g}}
+% \newcommand\th{{\tilde h}}
+\newcommand\ti{{\tilde i}}
+\newcommand\tj{{\tilde j}}
+\newcommand\tk{{\tilde k}}
+\newcommand\tl{{\tilde l}}
+\newcommand\tm{{\tilde m}}
+\newcommand\tn{{\tilde n}}
+%\newcommand\to{{\tilde o}}
+\newcommand\tp{{\tilde p}}
+\newcommand\tq{{\tilde q}}
+\newcommand\ts{{\tilde s}}
+%\newcommand\tt{{\tilde t}}
+\newcommand\tu{{\tilde u}}
+\newcommand\tv{{\tilde v}}
+\newcommand\tw{{\tilde w}}
+\newcommand\tx{{\tilde x}}
+\newcommand\ty{{\tilde y}}
+\newcommand\tz{{\tilde z}}
+\newcommand\ep{{\epsilon}}
+%\newcommand\trace{{\operatorname{trace}}}
+\newcommand\sign{{\operatorname{sign}}}
+%\newcommand\hess{{\operatorname{Hess}}}
+\newcommand\Dyson{{\operatorname{Dyson}}}
+\renewcommand\th{{\operatorname{th}}}
+
+
+
+
+
+
+\def\x{{\bf X}}
+\def\y{{\bf Y}}
+%\def\I#1{{\bf 1}_{#1}}
+\def\mb{\mbox}
+
+% \swapnumbers
+% \pagestyle{headings}
+\parindent = 5 pt
+\parskip = 12 pt
+
+\theoremstyle{plain}
+  \newtheorem{theorem}{Theorem}[section]
+  \newtheorem{conjecture}[theorem]{Conjecture}
+  \newtheorem{problem}[theorem]{Problem}
+  \newtheorem{assumption}[theorem]{Assumption}
+  \newtheorem{heuristic}[theorem]{Heuristic}
+  \newtheorem{proposition}[theorem]{Proposition}
+  \newtheorem{fact}[theorem]{Fact}
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{corollary}[theorem]{Corollary}
+  \newtheorem{claim}[theorem]{Claim}
+ % \newtheorem{problem} [theorem]{Question}
+
+\theoremstyle{definition}
+  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{example}[theorem]{Example}
+  \newtheorem{remark}[theorem]{Remark}
+  \numberwithin{equation}{section}
+
+\begin{document}
+\title{Math 104 - Weekly assignment 2}
+\author{Due 9 September 2016, by 16:00}
+\maketitle
+
+\begin{enumerate}
+\item Show that, for any $a,b\in\R$ with $a<b$, there exist infinitely many irrational numbers $x$ with $a<x<b$.
+\vspace{0.4in}
+\item Show that, for any $a, b\in\R$, it holds that
+$$\big| |a|-|b| \big|\leq |a+b|
+$$
+and 
+$$\big| |a|-|b| \big|\leq |a-b|.
+$$
+(Hint: These are both corollaries of the triangle inequality.)
+\vspace{0.4in}
+
+\item Show the Cauchy--Schwarz inequality: For any $a_1,\ldots,a_n\in\R$, $b_1,\ldots,b_n\in\R$, 
+$$(a_1b_1+\ldots+a_nb_n)^2\leq (a_1^2+\ldots +a_n^2)\cdot (b_1^2+\ldots +b_n^2).
+$$
+(Hint: Consider the polynomial 
+$$p(\lambda)=(a_1+\lambda b_1)^2+\ldots +(a_n+\lambda b_n)^2,\; \lambda \in \R.
+$$
+What is the degree of $p$? What is the sign of $p(\lambda)$ for $\lambda\in\R$? What does this imply for the discriminant of $p$?
+\vspace{0.4in}
+
+\item Use the geometric-arithmetic mean inequality to show the harmonic-geometric mean inequality. I.e., use that
+$$(x_1\cdots x_n)^{1/n}\leq \frac{x_1+\ldots+x_n}{n}\text{, for all }x_1,\ldots,x_n >0
+$$
+to prove that
+$$\frac{n}{\frac{1}{x_1}+\ldots +\frac{1}{x_n}}\leq (x_1\cdots x_n)^{1/n}\text{, for all }x_1,\ldots,x_n>0.
+$$
+\vspace{0.4in}
+
+\item Let $(a_n)_{n\in\N}$ be a sequence. Show that $(a_n)_{n\in\N}$ is bounded if and only if there exists some $M>0$ with $|a_n|\leq M$, for all $n\in \N$.
+\vspace{0.4in}
+
+\item Let $(a_n)_{n\in\mathbb{N}}$ be a sequence. (The aim of this exercise is to show that the convergence behaviour of a sequence doesn't depend on the first terms of the sequence.)
+\begin{enumerate}[(i)]
+\item Suppose that $(a_n)_{n\in\N}\rightarrow a$, for some $a\in\R$. Show that any final part $(a_m,a_{m+1},\ldots)$ of $(a_n)_{n\in\N}$ also converges to $a$.
+\item Suppose that some final part $(a_m,a_{m+1},\ldots)$ of $(a_n)_{n\in\N}$ converges to some $a\in\R$. Show that also $a_n\rightarrow a$.
+\item Deduce that:
+\begin{enumerate}[(a)]
+\item $a_n\rightarrow a$ if and only if $a_{n+3}\rightarrow a$.
+\item If $a_n\leq b_n\leq c_n$ for all $n\geq n_0$ in $\N$, for some $n_0\in\N$, and if $a_n\rightarrow l$, $c_n\rightarrow l$, then also $b_n\rightarrow l$. (This means that we can use the sandwich lemma even if $b_n$ is not between $a_n$ and $c_n$ for finitely many $n$).
+\end{enumerate}
+\end{enumerate}
+\vspace{0.4in}
+
+\item Show that, for all $x \in \R$, there exists a sequence of irrational numbers converging to $x$.
+\vspace{0.4in}
+
+\item Show that $\nexists a\in\R$ with $(-1)^n\rightarrow a$ as $n\rightarrow +\infty$ (i.e, the sequence $(-1)^n$, for $n\in\N$, doesn't converge).
+
+(Hint: Let $a\in\R$. How would we show that $a_n=(-1)^n$ doesn't converge to $a$? We would see what the negation of $a_n\rightarrow a$ is. The definition is: for any neighbourhood of $a$, I can find a final part of $(a_n)_{n\in\N}$ in the neighbourhood. So, the negation is: there exists a neighbourhood of $a$ that doesn't contain any final part of $(a_n)_{n\in\N}$. That's what we need to show for our sequence. Or, if you prefer it this way: we should show that $\exists \epsilon>0$ such that, for all $n_0\in\N$, there exists some $n\geq n_0$ in $\N$, with $|a_n-a|>\epsilon$. This the negation of the more formal definition of convergence.)
+\vspace{0.4in}
+
+\item True of False? Explain your answer:
+\begin{enumerate}[(i)]
+\item Every convergent sequence of irrational numbers converges to an irrational number.
+\item Every bounded sequence converges.
+\item If $a_n\rightarrow 0$ and $(b_n)_{n\in\N}$ is bounded, then $(a_nb_n)_{n\in\N}$ is bounded.
+\item If $a_n\rightarrow a$ and $a>0$, then $a_n>0$ for large $n$ (i.e., there exists some $n_0\in\N$ such that: for all $n\geq n_0$, $a_n>0$).
+\item If $a_n\rightarrow a$ and $a\geq 0$, then $a_n>0$ for large $n$.
+\end{enumerate}
+\vspace{0.4in}
+
+\item 
+\begin{enumerate}[(i)]
+\item Let $a_n\rightarrow a$ and $b_n\rightarrow b$. Show that, if $a_n\leq b_n$ for all $n\in\N$, then $a\leq b$.
+
+(Hint: For contradiction, suppose that $a> b$. Find two disjoint neighbourhoods of $a$ and $b$, and find final parts of the corresponding sequences in there. What goes wrong?)
+\item Let $a_n\rightarrow a$ and $b_n\rightarrow b$ with $a_n\lneq b_n$, for all $n\in\N$. Is it necessarily true that $a\lneq b$?
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
+
