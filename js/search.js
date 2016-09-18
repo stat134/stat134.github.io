@@ -20,7 +20,8 @@ $(document).ready(function() {
             // var resource_type =
             // var resource tags =
 
-            $("#table-data").append("<tr><td>" + to_append[i] + "</td>\" + <td>Definition</td> <td>Math, Fun</td> </tr>");
+            // Used google.com as a placeholder; add path to relevant resource
+            $("#table-data").append("<tr><td><a href=\"http://google.com\">" + to_append[i] + "</a></td>\" + <td>Definition</td> <td>Math, Fun</td> </tr>");
 
         }
       }
