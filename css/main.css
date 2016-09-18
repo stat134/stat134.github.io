@@ -1,6 +1,21 @@
-h1, h2 {
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
     text-align: center;
-    padding-bottom: 0.2em;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+
+h3 {
+    font-family: 'PT Serif', serif;
 }
 
 ul {
@@ -13,11 +28,7 @@ ul {
 }
 
 #syllabus_line {
-    padding-bottom: 0.75em;
-}
-
-#syllabus_line_note {
-    padding-bottom: 0.5em;
+    padding: 0.2em;
 }
 
 #text-box {
