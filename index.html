@@ -10,6 +10,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +25,7 @@
       <header class="container">
             <h1>Math 104: Introduction to Analysis</h1>
       </header>
-      
+
       <!-- Syllabus -->
       <section class="container">
           <hr>
@@ -73,16 +76,32 @@
               <i class=col-sm-12 id=note>For more information, refer to the full <a href=assets/syllabus.pdf target="_blank">syllabus</a>.</i>
           </div>
       </section>
-      <!-- Add gaps at the end of the line --> 
-      
-      <!-- Search feature --> 
+      <!-- Add gaps at the end of the line -->
+
+      <!-- Search feature -->
       <section class="container">
-          <hr>
-          
-          <h3>Search</h3>
-          <!-- Add search feature here -->
+        <h3>Search</h3>
+        <div id="search-box">
+          <input id="text-box" type="text" class="form-control" placeholder="Search for resources">
+        </div>
       </section>
-      
+
+      <!-- Search Results -->
+
+      <section id="results-table" class="container">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Resources</th>
+            </tr>
+          </thead>
+          <tbody id ="table-data">
+          </tbody>
+        </table>
+      </section>
+
+      <script src="js/search.js"></script>
+
       <!-- Calendar -->
       <section class="container">
           <hr>
@@ -360,16 +379,16 @@
 
               </tbody>
           </table>
-          
+
       </section>
-      
+
       <footer class="container">
           <row class="col-sm-12">
               <p>Developed by Chin Chang, <a href="philglazer.me" target="">Phil Glazer</a>, and <a href="andypalan.com">Andy Palan</a></p>
           </row>
       </footer>
 
-      
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
