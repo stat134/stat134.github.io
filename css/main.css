@@ -1,0 +1,45 @@
+h1, h2 {
+    text-align: center;
+    padding-bottom: 0.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+#note {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+#syllabus_line {
+    padding-bottom: 0.75em;
+}
+
+#syllabus_line_note {
+    padding-bottom: 0.5em;
+}
+
+#text-box {
+    height: 50px;
+    width: 50%;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+#odd_week {
+    background-color: white;
+}
+
+#even_week {
+    background-color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgba(231,154,175, 0.5);
+ }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #EACCD7;
+}
