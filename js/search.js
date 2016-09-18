@@ -29,4 +29,17 @@ $(document).ready(function() {
         $("#results-table").hide();
       }
     });
+
+
+    // toggle long/short version of syllabus
+    $("#toggle_syllabus").click(function() {
+      $("#syllabus_long").slideToggle();
+      if ( $("#toggle_syllabus").text() == "Show more" ) {
+        $("#toggle_syllabus").text("Show less");
+      }
+      else if ( $("toggle_syllabus").text("Show less")) {
+        $("#toggle_syllabus").text("Show more");
+      }
+      console.log($("#toggle_syllabus").text());
+    });
 });
