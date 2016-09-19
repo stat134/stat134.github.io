@@ -13,7 +13,15 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+      
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+      
     <script src="https://use.fontawesome.com/63e7afe910.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,8 +33,15 @@
   </head>
   <body>
       <!-- Title -->
+      <div class="navbar navbar-custom">
+          <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+            <h4 class=col-sm-6 id=nav-text-left>Math 104</h4>
+            <h4 class=col-sm-6 id=nav-text-right> Fall '16</h4>
+          </nav>
+      </div>
+      
       <header class="container">
-            <h1>Math 104: Introduction to Analysis (Fall '16)</h1>
+            <h1>Introduction to Analysis</h1>
       </header>
 
 
@@ -93,7 +108,7 @@
       <!-- Search feature -->
       <section class="container">
         <hr>
-        <h2>Search For Resources</h2>
+        <h2>Search For Definitions and Resources</h2>
         <div id="search-box">
           <input id="text-box" type="text" class="form-control" placeholder="Type your query here">
         </div>

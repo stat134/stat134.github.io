@@ -1,6 +1,8 @@
 // Sample resources for now; would like dictionary of term, type, and tags
 var resources = ["abstract","theorem","proof","professor","lecture","axiom","sets","field axioms","cauchy sequences","cardinality","subsequences","alternating series","continuity","riemann integration","convergence","closed sets","connectedness","closure","boundary","compactness","homework 1","homework 2","homework 3","homework 4"];
 
+var definitions = {}
+
 $(document).ready(function() {
     $("#results-table").hide();
     $("#text-box").keyup(function() {

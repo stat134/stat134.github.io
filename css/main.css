@@ -2,6 +2,26 @@
     width: 82%;
 }
 
+.navbar-custom .navbar-fixed-top {
+    font-family: 'PT Serif', serif;
+    background-color:rgb(122,192,232);
+    color: rgb(122,192,232);
+    border-radius:0;
+}
+
+#nav-text-left {
+    color: white;
+    padding-left: 6em;
+    margin-top: 0.8em;
+}
+
+#nav-text-right {
+    color: white;
+    padding-right: 6em;
+    margin-top: 0.8em;
+    text-align: right;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -9,7 +29,6 @@ body {
 h1 {
     font-family: 'PT Serif', serif;
     text-align: center;
-    padding-top: 1em;
 }
 
 h2 {
@@ -62,14 +81,14 @@ ul {
 
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: rgba(232,138,155,0.4);
+   background-color: rgba(122,192,232,0.4);
  }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(232,138,155,0.6);
+  background-color: rgba(122,192,232,0.6);
 }
 
 footer p {
     font-size: 0.75em;
-    float: right;
+    text-align: right;
 }
