@@ -5,6 +5,7 @@ body {
 h1 {
     font-family: 'PT Serif', serif;
     text-align: center;
+    padding-top: 1em;
 }
 
 h2 {
@@ -28,7 +29,7 @@ ul {
 }
 
 #syllabus_line {
-    padding: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 #text-box {
@@ -62,4 +63,9 @@ ul {
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: rgba(232,138,155,0.6);
+}
+
+footer p {
+    font-size: 0.75em;
+    float: right;
 }
