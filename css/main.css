@@ -40,17 +40,26 @@ ul {
 
 #odd_week {
     background-color: white;
+    border-right: solid 2px;
+    border-right-color: lightgrey;
 }
 
 #even_week {
     background-color: white;
+    border-right: solid 2px;
+    border-right-color: lightgrey;
+}
+
+#table_right {
+    border-right: solid 2px;
+    border-right-color: lightgrey;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: rgba(231,154,175, 0.5);
+   background-color: rgba(232,138,155,0.4);
  }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #EACCD7;
+  background-color: rgba(232,138,155,0.6);
 }
