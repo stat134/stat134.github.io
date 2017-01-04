@@ -1,42 +1,53 @@
 .container {
-    width: 82%;
+    width: 70%;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
-.navbar-custom .navbar-fixed-top {
+.navbar-custom {
     font-family: 'PT Serif', serif;
-    background-color:rgb(122,192,232);
-    color: rgb(122,192,232);
-    border-radius:0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    width: 68%;
+    margin-bottom: auto;
 }
 
 #nav-text-left {
-    color: white;
-    padding-left: 6.6em;
-    margin-top: 0.9em;
+    font-size: 1.6em;
+    margin-top: 1em;
+    padding-left: 0;
 }
 
 #nav-text-right {
-    color: white;
-    padding-right: 6.6em;
-    margin-top: 0.9em;
+    font-size: 1.6em;
+    margin-top: 1em;
+    padding-right: 0;
     text-align: right;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
+    font-size: 3.5em;
+    margin-top: 0.5em;
     font-family: 'PT Serif', serif;
-    text-align: center;
+    text-align: left;
 }
 
-h2 {
-    font-family: 'PT Serif', serif;
-    text-align: center;
-    padding-bottom: 0.5em;
+#syllabus_short {
+    margin-top: 1.5em;
 }
 
+#search-heading {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding-bottom: 0.25em;
+}
 
 h3 {
     font-family: 'PT Serif', serif;
@@ -44,6 +55,12 @@ h3 {
 
 ul {
     list-style: none;
+    margin-bottom: 0;
+}
+
+#announcements {
+    margin-left: 0.5em;
+    list-style:disc;
 }
 
 #note {
@@ -51,8 +68,8 @@ ul {
     font-style: italic;
 }
 
-#syllabus_line {
-    padding-bottom: 0.2em;
+#syllabus-line ul {
+    padding-bottom: 0;
 }
 
 #text-box {
@@ -81,14 +98,16 @@ ul {
 
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: rgba(122,192,232,0.4);
+   background-color: rgb(240,240,240);
  }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(122,192,232,0.6);
+  background-color: rgb(224,224,224) ;
 }
 
-footer p {
+footer li {
     font-size: 0.75em;
-    text-align: right;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
 }

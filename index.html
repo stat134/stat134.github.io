@@ -7,7 +7,7 @@
     <title>Math 104, Fall '16</title>
 
     <!-- Bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|PT+Serif" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
@@ -34,39 +34,57 @@
   <body>
       <!-- Title -->
       <div class="navbar navbar-custom">
-          <nav class="navbar navbar-fixed-top navbar-light bg-faded">
-            <h4 class=col-sm-6 id=nav-text-left>Math 104</h4>
-            <h4 class=col-sm-6 id=nav-text-right> Fall '16</h4>
+          <nav class="navbar">
+            <div class="container">
+                <h4 class="col-sm-6 col-xs-6" id=nav-text-left>Stat 134</h4>
+                <h4 class="col-sm-6 col-xs-6" id=nav-text-right>Spring '17</h4>
+            </div>
           </nav>
       </div>
       
       <header class="container">
-            <h1>Introduction to Analysis</h1>
+        <h1>Concepts of Probability</h1>
+        <h5>Companion site for UC Berkeley's Stat 134 sections taught by Andy Palan (for Ani Adhikari).</h5>
       </header>
 
-
-
+      <hr>
+      
       <!-- Syllabus -->
       <section class="container">
-          <hr>
           <div id=syllabus_short>
               <div class=row id=syllabus_line>
-                  <b class="col-sm-2">Instructor: </b>
-                  <p class="col-sm-10"><a href="http://web.mat.bham.ac.uk/~iliopoum/Website/index.html" target="_blank">Marina Iliopoulou</a></p>
+                  <b class="col-sm-2">uGSI: </b>
+                  <p class="col-sm-10"><a href="http://www.andypalan.com" target="_blank">Andy Palan</a> (aka Malayandi Palaniappan)</p>
               </div>
               <div class=row id=syllabus_line>
-                  <b class="col-sm-2">Time/Location: </b>
-                  <p class="col-sm-10">MWF 3:00 pm - 4:00 pm, 241 Cory</p>
+                  <b class="col-sm-2">Section: </b>
+                  <ul class="col-sm-10">
+                    <li><p>MW 3.00 pm - 4.00 pm, 334 Evans (Section 109)</p></li>
+                    <li><p>MW 4.00 pm - 5.00 pm, 334 Evans (Section 110)</p></li>
+                  </ul>
               </div>
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Office Hours: </b>
-                  <p class="col-sm-10">Tu 4:00 pm - 6:00 pm, Th 11:00 am - 1:00 pm, 849 Evans</p>
+                  <p class="col-sm-10">TBD</p>
+              </div>
+              <div class=row id=syllabus_line>
+                  <b class="col-sm-2">Email: </b>
+                  <p class="col-sm-10">malayandi AT berkeley DOT edu</p>
               </div>
               <div class=row id=syllabus_line>
                 <b class="col-sm-2"><a href="#" id="toggle_syllabus">Show more</a></b>
               </div>
           </div>
           <div id="syllabus_long" style="display:none">
+              <div class=row id=syllabus_line>
+                  <b class="col-sm-2">Faculty: </b>
+                  <p class="col-sm-10"><a href="http://www.stat.berkeley.edu/~ani" target="_blank">Ani Adhikari</a></p>
+              </div>
+              <div class=row id=syllabus_line>
+                  <b class="col-sm-2">Lecture: </b>
+                  <p class="col-sm-10">TuTh 9.30 am - 11.00 am, 2050 VLSB</p>
+              </div>
+
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Description: </b>
                   <p class="col-sm-10">Real numbers, sequences, series, limits, continuity, differentiability, mean value theorem, uniform convergence, interchange of limit operations, basics of metric spaces, Riemann integration.</p>
@@ -105,14 +123,26 @@
       </section>
       <!-- Add gaps at the end of the line -->
 
-      <!-- Search feature -->
+      <hr>
+      <!-- Announcements -->
       <section class="container">
-        <hr>
-        <h2>Search For Definitions and Resources</h2>
+          <h3>Announcements</h3>
+          <ul class="col-sm-12" id=announcements>
+              <li>Welcome to 134!</li>
+          </ul>
+      </section>
+    
+
+      <!-- Search feature -->
+      <!--
+      <hr>
+
+      <section class="container">
+        <h3 id="search-heading">Search For Resources</h3>
         <div id="search-box">
           <input id="text-box" type="text" class="form-control" placeholder="Type your query here">
         </div>
-      </section>
+      </section>-->
 
       <!-- Search Results -->
 
@@ -131,10 +161,11 @@
       </section>
 
       <script src="js/search.js"></script>
-
+      
+      <hr>
+      
       <!-- Calendar -->
       <section class="container">
-          <hr>
           <h3>Calendar</h3>
           <table class="table table-striped table-hover">
               <thead>
@@ -157,7 +188,7 @@
                   <td>(Topics) <br>(<a href="assets/lecture_notes/104_Lecture2.pdf" target="_blank">Lecture 2 Notes</a>)</td>
                   <td id=table_right><a href="assets/assignments/assignment1.pdf" target="_blank">Assignment 1</a> <br> due Mon, 9/5 (<a href="assets/assignments/104_solutions1.pdf" target="_blank">Solutions</a>)</td>
                 </tr>
-                <tr>
+                <!--<tr>
                   <th scope="row" rowspan="3" id=even_week>2</th>
                   <td>Mon, 8/29</td>
                   <td>(Topics) <br>(<a href="assets/lecture_notes/104_Lecture3.pdf" target="_blank">Lecture 3 Notes</a>)</td>
@@ -402,19 +433,20 @@
                   <td>Tue, 12/13</td>
                   <td>Final</td>
                   <td id=table_right></td>
-                </tr>
-
-
-
-
+                </tr>-->
               </tbody>
           </table>
 
       </section>
+    
+      <hr>
 
-      <footer class="container">
+      <footer section="container">
           <row class="col-sm-12">
-              <p>Developed by Chin Chang, <a href="http://philglazer.me" target="_blank">Phil Glazer</a>, and <a href="http://andypalan.com" target="_blank">Andy Palan</a></p>
+            <ul class="col-sm-12">
+              <li>Site developed by Chin Chang, <a href="http://philglazer.me" target="_blank">Phil Glazer</a>, and <a href="http://andypalan.com" target="_blank">Andy Palan</a></li>
+              <br>
+            </ul>
           </row>
       </footer>
 
