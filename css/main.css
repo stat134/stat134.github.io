@@ -4,6 +4,14 @@
     padding-bottom: 0.25em;
 }
 
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+}
+
 .navbar-custom {
     font-family: 'PT Serif', serif;
     padding-bottom: 0;
