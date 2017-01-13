@@ -69,6 +69,15 @@ ul {
     margin-bottom: 0;
 }
 
+#bullet {
+    margin-left: 1.2em;
+    list-style: disc;
+}
+
+#syllabus-item {
+    margin-bottom: 0em;
+}
+
 #announcements {
     margin-left: 0.5em;
     list-style:disc;
@@ -77,10 +86,6 @@ ul {
 #note {
     font-size: 0.75em;
     font-style: italic;
-}
-
-#syllabus-line ul {
-    padding-bottom: 0;
 }
 
 #text-box {
@@ -115,6 +120,16 @@ ul {
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: rgb(224,224,224) ;
 }
+
+#level-1 {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#level-2 {
+    margin-left: 2em;
+}
+
 
 footer li {
     font-size: 0.75em;
