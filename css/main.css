@@ -39,8 +39,13 @@ hr {
     text-align: right;
 }
 
+#subheading {
+    font-size: 1.1em;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
 }
 
 h1 {
