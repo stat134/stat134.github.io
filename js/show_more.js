@@ -1,3 +1,3 @@
-$("#toggle_syllabus").click(function() {
-  $("#syllabus_long").hide();
+$(".toggle_syllabus").click(function() {
+  $(".syllabus_long").hide();
 });
