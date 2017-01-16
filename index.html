@@ -49,6 +49,16 @@
 
       <hr>
       
+      <!-- Announcements -->
+      <section class="container">
+          <h3>Announcements</h3>
+            <h4 id=level-1>Week 1</h4>
+            <p id=level-2>Welcome to Stat 134!</p>
+            <p id=level-2>There will be no office hours this week - they will start on Week 2.</p>
+      </section>
+    
+      <hr>
+
       <!-- Syllabus -->
       <section class="container">
           <div id=syllabus_short>
@@ -72,7 +82,7 @@
                   <p class="col-sm-10">malayandi AT berkeley DOT edu</p>
               </div>
               <div class=row id=syllabus_line>
-                <b class="col-sm-2"><a href="#" id="toggle_syllabus">Show more</a></b>
+                <b class="col-sm-2"><a href="javascript:void(0);" id="toggle_syllabus">Show more</a></b>
               </div>
           </div>
           <div id="syllabus_long" style="display:none">
@@ -87,11 +97,11 @@
 
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Course Website: </b>
-                  <p class="col-sm-10"><a href=http://www.stat.berkeley.edu/~ani/s134s16/index.html target=_blank>http://www.stat.berkeley.edu/~ani/s134s16/index.html</a></p>
+                  <p class="col-sm-10"><a href=http://www.stat.berkeley.edu/~ani/s134s17/index.html target=_blank>http://www.stat.berkeley.edu/~ani/s134s17/index.html</a></p>
               </div>
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Prerequisites: </b>
-                  <p class="col-sm-10">Mastery of the material in Appendices 1-4 of the text, fluency with calculus (derivatives and integrals) in two variables, and – these are crucial – clear logical reasoning and strong problem-solving skills.</p>
+                  <p class="col-sm-10">Mastery of the material in Appendices 1-4 of the text, fluency with calculus (derivatives and integrals) in two variables, and – these are crucial – clear logical reasoning and strong problem-solving skills. Test yourself on some <a href=http://www.stat.berkeley.edu/~ani/s134s17/prereq.pdf target="_blank">practice problems.</a></p>
               </div>
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Textbook: </b>
@@ -100,9 +110,9 @@
               <div class=row id=syllabus_line>
                   <b class="col-sm-2">Homework: </b>
                   <ul class="col-sm-10">
-                      <li><p>Assignments will be posted <a href=# target="_blank">here</a> on Thursdays and are due the following Wednesday at the start of section.</p></li>
+                      <li><p>Assignments are posted <a href=# target="_blank">here</a> and in the calendar below. They are due each Wednesday in section, by 20 minutes after the hour. (i.e. If your section starts at 3 pm, you must hand in your homework by 3.20 pm at the latest).</p></li>
                       <li><p>Papers will be graded on a 0/1 scale. Each assignment will consist of 8 problems. A good attempt at 6 or more problems will receive the score of 1; anything else will get 0. Course staff will define what constitutes a "good attempt." We will be looking for reasoning and detailed work shown – it is assumed that you will show work or provide reasoning whether or not the question asks for it.</p></li>
-                      <li><p><b>No late homeworks will be accepted and cheating will not be tolerated.</b>While you are encouraged to work with other people, you must write up your own solutions.</p></li>
+                      <li><p><b>No late homeworks will be accepted and cheating will not be tolerated.</b> While you are encouraged to work with other people, you must write up your own solutions.</p></li>
                       <li><p>Your two lowest homework scores will be dropped in the computation of your overall homework score.</p></li>
                   </ul>
               </div>
@@ -113,8 +123,8 @@
               <div class=row id=syllabus_line_note>
                   <b class="col-sm-2">Exams: </b>
                   <ul class="col-sm-10">
-                    <li><p>Midterm: #</p></li>
-                    <li><p>Final: #</p></li>
+                    <li><p>Midterm: Thursday March 2nd, in lecture.</p></li>
+                    <li><p>Final: Wednesday May 10th, 11:30 a.m. - 2:30 p.m. (Exam Group 10)</p></li>
                   </ul>
               </div>
               <div class=row id=syllabus_line_note>
@@ -122,23 +132,16 @@
                   <ul class="col-sm-10">
                       <li><p id = syllabus-item><b>Maximum</b> Of:</p></li>
                       <li id=bullet><p id=syllabus-item>10% Homework, 25% Quizzes, 25% Midterm, 40% Final</p></li>
-                      <li id=bullet><p id=syllabus-item>10% Homework, 25% Quizzes, 65% Final</p></li>
+                      <li id=bullet><p>10% Homework, 25% Quizzes, 65% Final</p></li>
+                      <li><p>Note that the above grading system implies that the Final clobbers the Midterm. Additionally, your two lowest homework scores and your lowest quiz score will be dropped.</p></li>
                   </ul>
               </div>
           </div>
       </section>
-      <!-- Add gaps at the end of the line -->
-
-      <hr>
-      <!-- Announcements -->
-      <section class="container">
-          <h3>Announcements</h3>
-            <h4 id=level-1>Week 1</h4>
-            <p id=level-2>Welcome to Stat 134!</p>
-      </section>
-    
+      <!-- Add gaps at the end of the line -->    
 
       <!-- Search feature -->
+      <!--
       <hr>
 
       <section class="container">
@@ -146,10 +149,11 @@
         <div id="search-box">
           <input id="text-box" type="text" class="form-control" placeholder="Type your query here">
         </div>
-      </section>
+      </section>-->
 
       <!-- Search Results -->
 
+      <!--
       <section id="results-table" class="container">
         <table class="table table-hover">
           <thead id=table_head>
@@ -165,7 +169,7 @@
       </section>
 
       <script src="js/search.js"></script>
-      
+      -->
       <hr>
       
       <!-- Calendar -->
@@ -175,38 +179,75 @@
               <thead>
                 <tr id=table_titles>
                   <th>Week</th>
-                  <th>Date</th>
                   <th>Topics</th>
-                  <th>Handout</th>
+                  <th>Section Notes</th>
+                  <th>Homework</th>
+                  <th>Min. Practice</th>
+                  <th>Highly Rec.</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" rowspan="1" id=odd_week>1</th>
-                  <td>Wed, 1/18</td>
+                  <th scope="row" id=odd_week>1</th>
+                  <td>1.1 - 1.6</td>
+                  <td>Wed, 18/1</td>
                   <td></td>
+                  <td></td>                    
                   <td id=table_right></td>
                 </tr>
                 <tr>
-                  <th scope="row" rowspan="2" id=even_week>2</th>
-                  <td>Mon, 1/23</td>
+                  <th scope="row" id=even_week>2</th>
+                  <td>1.6, 2.1, 2.2</td>
+                  <td>Mon, 23/1
+                      <br>Wed, 25/1</td>
                   <td></td>
+                  <td></td>                    
                   <td id=table_right></td>
                 </tr>
                 <tr>
-                  <td>Wed, 1/25</td>
+                  <th scope="row" id=odd_week>3</th>
+                  <td>2.4, 2.5</td>
+                  <td>Mon, 30/1
+                      <br>Wed, 1/2: <b>Ch 1 Quiz</b></td>
                   <td></td>
+                  <td></td>                    
                   <td id=table_right></td>
                 </tr>
                 <tr>
-                  <th scope="row" rowspan="2" id=odd_week>3</th>
-                  <td>Mon, 1/30</td>
+                  <th scope="row" id=even_week>4</th>
+                  <td>3.1, 3.2</td>
+                  <td>Mon, 6/2
+                      <br>Wed, 8/2</td>
                   <td></td>
+                  <td></td>                    
                   <td id=table_right></td>
                 </tr>
                 <tr>
-                  <td>Wed, 2/1</td>
+                  <th scope="row" id=odd_week>5</th>
+                  <td>3.3, 3.6 </td>
+                  <td>Mon, 13/2
+                      <br>Wed, 15/2: <b>Ch 2 Quiz</b></td>
                   <td></td>
+                  <td></td>                    
+                  <td id=table_right></td>
+                </tr>
+                <tr>
+                  <th scope="row" id=even_week>6</th>
+                  <td>3.4, 3.5</td>
+                  <td>Mon, 20/2
+                      <br>Wed, 22/2</td>
+                  <td></td>
+                  <td></td>                    
+                  <td id=table_right></td>
+                </tr>
+                <tr>
+                  <th scope="row" id=odd_week>7</th>
+                  <td>Tue, 28/2: Review
+                    <br>Thur, 3/2: <b>Midterm</b></td>
+                  <td>Mon, 27/2
+                      <br>Wed, 1/3</td>
+                  <td></td>
+                  <td></td>                    
                   <td id=table_right></td>
                 </tr>
               </tbody>
@@ -219,16 +260,23 @@
       <section class="container">
         <h3>Resources</h3>
             <h4 id=level-1>Quick Links</h4>
-                <p id=level-2>Homework:</p>
-                <p id=level-2>Reading Guide:</p>
+                <p id=level-2>Reading Guide: <a href=http://www.stat.berkeley.edu/~ani/s134s17/contents.html target="_blank">http://www.stat.berkeley.edu/~ani/s134s17/contents.html</a></p>
             <h4 id=level-1>Support</h4>
               <p id=level-2>The Student Learning Center (SLC) offers extensive support for Stat 134. I highly recommended that you enroll in the SLC's Adjunct Course for Stat 134 (Stat 198). Click <a href=http://slc.berkeley.edu/statistics-134 target="_blank">here</a> to learn more.</p>
             <h4 id=level-1>A Note on Using Solution Manuals</h4>
-              <p id=level-2>TL;DR Don't. There is a big distinction between understanding a solution and being able to produce it yourself. When you read a solution presented in a solution manual, you will undoutably understand it; however, this does not mean that you will be able to produce a similar solution yourself at another time. Solution manuals often give the illusion of proficiency; more often than not, this illusion is "cruelly shattered by exams". If you don't believe me, just <a href=https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand target="_blank">ask Richard Feynman</a>.</p>
-              
-              <p id=level-2>This trap is very easy to fall into and is indeed one that many a good student (myself included) has fallen prey to. A large part of the learning process, especially in a course like Stat 134 where the problems you face are especially tricky, is struggling through problems and confronting the bleak sense of helplessness you might feel when faced with a problem unlike anything you've seen before. It is hard to find many things more rewarding in life than that "Eureka" moment; the moment that arises after hours of hard, fruitless labour, when what seemed so opaque merely seconds prior, becomes so suddenly and entirely clear. Don't deprive yourself of the beauty of such moments.</p>
-          
-              <p id=level-2>Do yourself a favour and don't use solution manuals, even if to just "check your work". If you need help with the homework assignments, please reach out to me or make use of any one of the SLC's many services.</p>
+              <div>
+                  <div>
+                      <p id=level-2>TL;DR Don't. <b><a href="javascript:void(0);" id="toggle_tldr">Why?</a></b></p>
+                  </div>
+                  
+                  <div id="tldr_long" style="display:none">
+                      <p>There is a big distinction between understanding a solution and being able to produce it yourself. When you read a solution presented in a solution manual, you will undoutably understand it; however, this does not mean that you will be able to produce a similar solution yourself at another time. Solution manuals often give the illusion of proficiency; more often than not, this illusion is cruelly shattered by exams. If you don't believe me, just <a href=https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand target="_blank">ask Richard Feynman</a>.</p>
+
+                      <p id=level-2>This trap is very easy to fall into and is indeed one that many a good student (myself included) has fallen prey to. A large part of the learning process, especially in a course like Stat 134 where the problems you face are especially tricky, is struggling through problems and confronting the bleak sense of helplessness you might feel when faced with a problem unlike anything you've seen before. It is hard to find many things more rewarding in life than that "Eureka" moment, that arises after hours of hard, fruitless labour, when what seemed so opaque merely seconds prior becomes so suddenly and entirely clear. Don't deprive yourself of the beauty of such moments.</p>
+
+                      <p id=level-2>Do yourself a favour and don't use solution manuals, even if to just "check your work". If you need help with the homework assignments, please reach out to me or make use of any one of the SLC's many services.</p>
+                  </div>
+              </div>
       </section>
 
     
@@ -237,7 +285,7 @@
       <footer section="container">
           <row class="col-sm-12">
             <ul class="col-sm-12">
-              <li>Site content adapted from Ani Adhikari's Stat 134 <a href=# target="_blank">course website</a>. Site developed by Chin Chang, <a href="http://philglazer.me" target="_blank">Phil Glazer</a>, and <a href="http://andypalan.com" target="_blank">Andy Palan</a>. </li>
+              <li>Site content adapted from Ani Adhikari's Stat 134 <a href=http://www.stat.berkeley.edu/~ani/s134s17/index.html target="_blank">course website</a>. Site developed by Chin Chang, <a href="http://philglazer.me" target="_blank">Phil Glazer</a>, and <a href="http://andypalan.com" target="_blank">Andy Palan</a>. </li>
               <br>
             </ul>
           </row>
