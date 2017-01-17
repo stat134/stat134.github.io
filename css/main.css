@@ -56,14 +56,19 @@ h1 {
 }
 
 #week-problems {
-    padding-left: 2em;
+    margin-left: 2em;
+    padding-left: 0em;
+}
+
+#week-problems ul {
+    margin-left: 0em;
+    padding-left: 0em;
 }
 
 #week-problems li {
-    padding-top: 0.25em;
+    padding-top: 0.4em;
     padding-left: 2em;
 }
-
 
 #syllabus_short {
     margin-top: 1.5em;
@@ -111,6 +116,7 @@ ul {
 }
 
 #odd_week {
+    width: 15%;
     background-color: white;
     border-right: solid 2px;
     border-right-color: lightgrey;
@@ -128,7 +134,7 @@ ul {
 }
 
 #middle_column {
-    width: 18%;
+    width: 25%;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, 
