@@ -55,6 +55,16 @@ h1 {
     text-align: left;
 }
 
+#week-problems {
+    padding-left: 2em;
+}
+
+#week-problems li {
+    padding-top: 0.25em;
+    padding-left: 2em;
+}
+
+
 #syllabus_short {
     margin-top: 1.5em;
 }
