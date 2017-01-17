@@ -44,4 +44,17 @@ $(document).ready(function() {
       }
       console.log($("#toggle_syllabus").text());
     });
+    
+    // toggle long/short version of tldr
+    $("#toggle_tldr").click(function() {
+      $("#tldr_long").slideToggle();
+      if ( $("#toggle_tldr").text() == "Why?" ) {
+        $("#toggle_tldr").text("Alright, enough with the lecture.");
+      }
+      else if ( $("toggle_tldr").text("Alright, enough with the lecture.")) {
+        $("#toggle_tldr").text("Why?");
+      }
+      console.log($("#toggle_tldr").text());
+    });
+
 });

@@ -117,6 +117,10 @@ ul {
     border-right-color: lightgrey;
 }
 
+#middle_column {
+    width: 18%;
+}
+
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: rgb(240,240,240);
