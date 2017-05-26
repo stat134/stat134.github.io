@@ -109,15 +109,18 @@ h1 {
 }
 
 .swiper-container {
+    position: relative;
     width: 100%;
     height: 100%;
 }      
 
 .swiper-slide {
+    position: relative;
     width: 100%;
+    height: 100%;
     margin-top: 1em;
-    margin-left: 4em;
-    padding-right: 7em;
+    padding-left: 4em;
+    padding-right: 4em;
     padding-bottom: 3em;
 }
 
