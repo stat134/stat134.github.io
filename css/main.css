@@ -28,8 +28,7 @@
     }
     .header-xs {
         text-align: center;
-    }
-    
+    } 
 }
 
 .navbar-custom {
@@ -227,4 +226,38 @@ footer li {
 
 .homework #problems {
     padding-left: 4em;
+}
+
+#bio-block {
+    margin-bottom: 2em;
+}
+
+img {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#staff-photo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio-title {
+    margin-top: 1em;
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    font-size: 1.25em;
+    margin-bottom: 0em;
+}
+
+.bio-email {
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1em;
+}
+
+.bio-desc {
+    margin-bottom: 1em;
 }
