@@ -240,7 +240,7 @@ img {
 }
 
 #staff-photo {
-    width: 50%;
+    width: 40%;
     display: block;
     margin: 0 auto;
 }
@@ -260,4 +260,25 @@ img {
 
 .bio-desc {
     margin-bottom: 1em;
+}
+
+a:link {
+    color: black;
+    border-bottom: 1px dotted #797D7F;
+}
+
+a:visited {
+    color: black;
+    border-bottom: 1px dotted #797D7F;
+}
+
+a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    border-bottom: 1px solid black;
 }
