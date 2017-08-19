@@ -214,9 +214,12 @@ footer li {
     margin-bottom: 0.5em;
 }
 
+.logistics {
+    padding-left: 1em;
+}
+
 .homework ul {
     padding-left: 1em;
-    padding-top: 1em;
 }
 
 .homework li {
@@ -226,10 +229,6 @@ footer li {
 
 .homework #problems {
     padding-left: 4em;
-}
-
-#bio-block {
-    margin-bottom: 2em;
 }
 
 img {
@@ -262,7 +261,7 @@ img {
     margin-bottom: 1em;
 }
 
-.bio-times {
+#gsi-pair-row {
     margin-bottom: 1.5em;
 }
 
