@@ -262,6 +262,10 @@ img {
     margin-bottom: 1em;
 }
 
+.bio-times {
+    margin-bottom: 1.5em;
+}
+
 a:link {
     color: black;
     border-bottom: 1px dotted #797D7F;
