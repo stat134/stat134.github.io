@@ -36,11 +36,11 @@ $(document).ready(function() {
     // toggle long/short version of syllabus
     $("#toggle_syllabus").click(function() {
       $("#syllabus_long").slideToggle();
-      if ( $("#toggle_syllabus").text() == "Show more" ) {
-        $("#toggle_syllabus").text("Show less");
+      if ( $("#toggle_syllabus").text() == "Show Full Syllabus" ) {
+        $("#toggle_syllabus").text("Show Less");
       }
-      else if ( $("toggle_syllabus").text("Show less")) {
-        $("#toggle_syllabus").text("Show more");
+      else if ( $("toggle_syllabus").text("Show Less")) {
+        $("#toggle_syllabus").text("Show Full Syllabus");
       }
       console.log($("#toggle_syllabus").text());
     });
