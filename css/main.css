@@ -289,3 +289,12 @@ a:active {
 #notation {
     margin-bottom: 1.5em;
 }
+
+#bio-entry {
+    margin-bottom: 1em;
+}
+
+#bio-label {
+    margin-left: 0em;
+    padding-left: 0em;
+}
