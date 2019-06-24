@@ -1,2 +1,2 @@
-# Stat 134 Spring '17
-Course Website for Sections 109/110 (Taught by Andy Palan)
+# Stat 134 Summer '19
+Course Website for Stat 134
