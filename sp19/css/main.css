@@ -1,0 +1,300 @@
+.container {
+    width: 70%;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    #nav-text-left ul {
+        padding-left: 2em;
+    }
+    #nav-text-right ul {
+        padding-right: 2em;
+    }
+    .header-xs {
+        text-align: center;
+    } 
+}
+
+.navbar-custom {
+    font-family: 'PT Serif', serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    width: 68%;
+    margin-bottom: auto;
+}
+
+.nav li {
+    float: right;
+}
+
+nav h4 {
+    font-size: 2em;
+}
+
+nav p {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1.2em;
+    padding-left: 1em;
+    font-size: 1.1em;
+}
+
+#nav-text-left {
+    margin-top: 1em;
+    padding-left: 0;
+}
+
+#nav-text-right {
+    margin-top: 1em;
+    padding-right: 0;
+    text-align: right;
+}
+
+nav a:link {
+    color: black;
+    border-bottom: none;
+}      
+
+nav a:visited {
+    color: black;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkgray;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: darkgray;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+#subheading {
+    font-size: 1.1em;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 0.5em;
+    font-family: 'PT Serif', serif;
+    text-align: left;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}      
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 3em;
+}
+
+#swiper-slide-title {
+    font-family: 'Lora', serif;
+}
+
+#swiper-announcement li {
+    padding-top: 0.4em;
+}
+
+#syllabus_short {
+    margin-top: 1.5em;
+}
+
+#search-heading {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+
+h3 {
+    font-family: 'PT Serif', serif;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#bullet {
+    margin-left: 1.2em;
+    list-style: disc;
+}
+
+#syllabus-item {
+    margin-bottom: 0em;
+}
+
+#announcements {
+    margin-left: 0.5em;
+    list-style:disc;
+}
+
+#note {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+#text-box {
+    height: 50px;
+    width: 50%;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+#odd_week {
+    width: 15%;
+    background-color: white;
+    border-right: solid 2px;
+    border-right-color: lightgrey;
+}
+
+#even_week {
+    background-color: white;
+    border-right: solid 2px;
+    border-right-color: lightgrey;
+}
+
+#table_right {
+    border-right: solid 2px;
+    border-right-color: lightgrey;
+}
+
+#middle_column {
+    width: 25%;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgb(240,240,240);
+ }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgb(224,224,224) ;
+}
+
+footer li {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.logistics {
+    padding-left: 1em;
+}
+
+.homework ul {
+    padding-left: 1em;
+}
+
+.homework li {
+    padding-left: 2em;
+    padding-bottom: 0.5em;
+}
+
+.homework #problems {
+    padding-left: 4em;
+}
+
+img {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 90%;
+    border-radius: 50%;
+}
+
+#staff-photo {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio-title {
+    margin-top: 1em;
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    font-size: 1.25em;
+    margin-bottom: 0em;
+}
+
+.bio-email {
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1em;
+}
+
+.bio-desc {
+    margin-bottom: 1em;
+}
+
+#gsi-pair-row {
+    margin-bottom: 1.5em;
+}
+
+a:link {
+    color: black;
+    border-bottom: 1px dotted #797D7F;
+}
+
+a:visited {
+    color: black;
+    border-bottom: 1px dotted #797D7F;
+}
+
+a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+#notation {
+    margin-bottom: 1.5em;
+}
+
+#bio-entry {
+    margin-bottom: 1em;
+}
+
+#bio-label {
+    margin-left: 0em;
+    padding-left: 0em;
+}
