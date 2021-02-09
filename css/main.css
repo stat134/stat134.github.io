@@ -198,6 +198,10 @@ ul {
     width: 25%;
 }
 
+#thin_column {
+    width: 17%;
+}
+
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: rgb(240,240,240);
