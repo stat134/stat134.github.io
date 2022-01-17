@@ -1,2 +1,2 @@
-# Stat 134 Fall '20
+# Stat 134 Spring 22'
 Course Website for Stat 134
